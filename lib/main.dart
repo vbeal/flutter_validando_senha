@@ -35,9 +35,16 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.white,
-        title: Text(
-          "Cria sua Conta",
-          style: TextStyle(color: Colors.black),
+        title: Center(
+          child: Text(
+            "CRIA SUA CONTA",
+            style: TextStyle(
+              color: const Color.fromARGB(255, 112, 22, 22),
+              fontSize: 24, // Aumentar o tamanho da fonte
+              fontWeight: FontWeight.bold, // Colocar em negrito
+              letterSpacing: 1.5, // Espaçamento entre letras (opcional)
+            ),
+          ),
         ),
       ),
       body: Container(
@@ -47,7 +54,7 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Set a password",
+              "Crie uma senha segura",
               style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
             ),
             SizedBox(
@@ -87,7 +94,7 @@ class _HomePageState extends State<HomePage> {
                 focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
                     borderSide: BorderSide(color: Colors.black)),
-                hintText: "Password",
+                hintText: "Digite sua Senha",
                 contentPadding:
                     EdgeInsets.symmetric(horizontal: 20, vertical: 20),
               ),
